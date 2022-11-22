@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(68, 151, 230);
+}
+.container {
+  padding: 8%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.div1, .div2, .div3 {
+  width: 25vw;
+  height: 50vh;
+  padding: 4%;
+  border: 3px solid rgba(255, 255, 255, 0.438);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(26, 26, 26, 0.527);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+}
+.div1:hover, .div2:hover, .div3:hover {
+  background-color: rgb(161, 115, 236);
+  border: 3px solid rgb(161, 115, 236);
+}
+
+p  {
+  color: black;
+  /* width: 100%; */
+}
+p:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+img {
+  width: 132px;
+}
+.divHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.226);
+  background-color: rgb(68, 151, 230);
+}
+ul {
+  display: flex;
+}
+li {
+  padding: 10px;
+}
+a {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(63, 35, 129);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+.divUsuario {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn {
+  margin: 10px;
+  padding:  10px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.582);
+  border-radius: 5px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(228, 22, 22)
+}
+
+@media screen and (max-width:750px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .div1, .div2, .div3 {
+    width: 70vw;
+    padding: 4%;
+    margin: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.438);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(26, 26, 26, 0.527);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  
+  }
+  img {
+    display: flex;
+    margin: 10px 0;
+  }
+}
